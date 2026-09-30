@@ -79,3 +79,4 @@ The application connects the frontend web page with the Python FastAPI backend t
 
 3. **CORS (Cross-Origin Resource Sharing)**:
    - Because the frontend runs from a local file (`file://`) or a different port (e.g., `http://127.0.0.1:5500`) than the backend (`http://127.0.0.1:8000`), CORS middleware is enabled in `main.py` using `CORSMiddleware`. This allows the browser to make cross-origin requests safely without getting blocked.
+"# Student_tech_hub" 
