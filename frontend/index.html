@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <h1 class="logo">🎓 Student Tech Hub</h1>
+            <p class="tagline">Your Gateway to Tech Events, Workshops & Hackathons</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero & Info Banner -->
+        <section class="hero">
+            <h2>Welcome to Student Tech Hub</h2>
+            <p>Connect with peers, build exciting projects, and stay updated with campus tech activities!</p>
+        </section>
+
+        <!-- Events Section -->
+        <section class="card-section">
+            <div class="section-header">
+                <h2>Upcoming Technical Events</h2>
+                <button id="load-events-btn" class="btn primary-btn">Load Events</button>
+            </div>
+            
+            <div id="events-container" class="events-grid">
+                <p class="placeholder-text">Click "Load Events" above to discover upcoming tech events!</p>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="card-section">
+            <h2>Student Registration</h2>
+            <p class="section-desc">Sign up to get event updates and reminders straight to your inbox.</p>
+            
+            <form id="registration-form" class="form">
+                <div class="form-group">
+                    <label for="student-name">Full Name</label>
+                    <input type="text" id="student-name" name="name" placeholder="e.g. Jane Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="student-email">Email Address</label>
+                    <input type="email" id="student-email" name="email" placeholder="e.g. jane.doe@university.edu" required>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Register Now</button>
+            </form>
+
+            <div id="response-message" class="message-box hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Student Tech Hub. Built simply for beginner web developers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
